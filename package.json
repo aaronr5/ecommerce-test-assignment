@@ -1,6 +1,9 @@
 {
 	"name": "Ecommerce",
 	"author": "aaronr5",
+	"scripts": {
+		"start": "node backend/src/index.js"
+	},
 	"engines": {
 		"node": "11.x"
 	}
