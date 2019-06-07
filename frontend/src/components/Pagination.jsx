@@ -83,7 +83,7 @@ const Pagination = ({ totalItems, limit, neighbors, offset, setOffset }) => {
           }
 
           return (
-            <li key={i}>
+            <li key={i} className={currentPage === page ? 'active' : ''}>
               <a onClick={() => gotoPage(page)}>{page}</a>
             </li>
           );

@@ -10,6 +10,10 @@ export const PageMenu = styled.ul`
   font-size: 2rem;
   display: table;
 
+  li.active {
+    background-color: rgba(127, 127, 127, 0.33);
+  }
+
   li {
     display: inline-block;
     padding: 20px;

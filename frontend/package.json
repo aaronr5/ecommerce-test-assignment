@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server",
-    "clean": "rimraf ../dist",
+    "clean": "rimraf ../backend/dist",
     "build": "npm run clean && NODE_ENV=production webpack"
   },
   "author": "aaronr5",
