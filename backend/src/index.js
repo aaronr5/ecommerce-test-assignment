@@ -20,6 +20,6 @@ app.use('/graphql', graphqlHTTP({
 // Connect to db and start server
 mongoose.connect(DATABASE_URL)
 	.then(() => {
-		app.listen(pocess.env.PORT || 8000);
+		app.listen(process.env.PORT || 8000);
 	})
 	.catch(err => console.log(err));
