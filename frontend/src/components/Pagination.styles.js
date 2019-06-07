@@ -9,6 +9,7 @@ export const PageMenu = styled.ul`
   padding: 20px;
   font-size: 2rem;
   display: table;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 
   li.active {
     background-color: rgba(127, 127, 127, 0.33);

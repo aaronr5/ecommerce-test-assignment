@@ -5,7 +5,7 @@ export const ItemCard = styled.div`
   padding: 10px;
   box-sizing: border-box;
   font-size: 1.5rem;
-  font-family: BogleWeb, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   text-align: center;
 
   @media (min-width: 1024px) {
