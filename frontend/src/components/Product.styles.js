@@ -1,3 +1,4 @@
+// Moved styles here to de-clutter the component file
 import styled from 'styled-components';
 
 export const ItemCard = styled.div`

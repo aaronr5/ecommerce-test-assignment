@@ -3,6 +3,7 @@ import { createRange } from '../helpers/createRange';
 
 import { PageMenu } from './Pagination.styles.js';
 
+// fetches page numbers based on current page, total pages, and number of neighbors specified
 const fetchPages = (totalPages, currentPage, neighbors) => {
   const numbers = neighbors * 2 + 3;
   const blocks = numbers + 2;

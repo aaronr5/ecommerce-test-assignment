@@ -1,4 +1,4 @@
-// Moved the styles here just to remove the cluter from the actual component file
+// Moved styles here to de-clutter the component file
 import styled from 'styled-components';
 
 const border = '2px solid #6123ff';
