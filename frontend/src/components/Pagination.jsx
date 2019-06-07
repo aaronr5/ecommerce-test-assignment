@@ -46,21 +46,19 @@ const Pagination = ({ totalItems, limit, neighbors, offset, setOffset }) => {
   const totalPages = Math.ceil(totalItems / limit);
   const pages = fetchPages(totalPages, currentPage, neighbors, currentPage);
 
+  const gotoPage = page => {
+    setCurrentPage(page);
+    setOffset((page - 1) * limit);
+  };
+
   const moveLeft = e => {
     e.preventDefault();
-    setCurrentPage(currentPage - 1);
-    setOffset(currentPage * limit);
+    gotoPage(currentPage - neighbors * 2 - 1);
   };
 
   const moveRight = e => {
     e.preventDefault();
-    setCurrentPage(currentPage + neighbors * 2 + 1);
-    setOffset(currentPage * limit);
-  };
-
-  const gotoPage = page => {
-    setOffset((page - 1) * limit);
-    setCurrentPage(Math.max(0, Math.min(page, totalPages)));
+    gotoPage(currentPage + neighbors * 2 + 1);
   };
 
   return (
