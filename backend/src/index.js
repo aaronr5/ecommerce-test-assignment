@@ -2,6 +2,7 @@ const express = require('express');
 const graphqlHTTP = require('express-graphql');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const path = require('path');
 
 const { DATABASE_URL } = require('./config');
 const { resolver, schema } = require('./graphql');
@@ -9,7 +10,7 @@ const { resolver, schema } = require('./graphql');
 const app = express();
 
 app.use(cors());
-app.use(express.static('../dist'));
+app.use(express.static(path.resolve(__dirname, '../dist')));
 
 app.use('/graphql', graphqlHTTP({
 	schema: schema,
