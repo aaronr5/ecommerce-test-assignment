@@ -1,5 +1,4 @@
 {
-	"name": "Ecommerce-test-app",
 	"author": "aaronr5",
 	"scripts": {
 		"start": "node backend/src/index.js"
