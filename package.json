@@ -1,0 +1,7 @@
+{
+	"name": "Ecommerce",
+	"author": "aaronr5",
+	"engines": {
+		"node": "11.x"
+	}
+}
